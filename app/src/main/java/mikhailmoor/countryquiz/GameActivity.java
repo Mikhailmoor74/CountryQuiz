@@ -17,6 +17,8 @@ public class GameActivity extends AppCompatActivity {
     private Button europaButton;
     private Button asiaButton;
     private Button oceaniaButton;
+    private Button africaButton;
+    private Button americaButton;
 
     private MaterialToolbar toolbar;
 
@@ -29,6 +31,9 @@ public class GameActivity extends AppCompatActivity {
         europaButton = findViewById(R.id.europaButton);
         asiaButton = findViewById(R.id.asiaButton);
         oceaniaButton = findViewById(R.id.oceaniaButton);
+        africaButton = findViewById(R.id.africaButton);
+        americaButton = findViewById(R.id.americaButton);
+
         toolbar = findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);

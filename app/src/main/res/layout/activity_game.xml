@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameActivity">
+    tools:context=".GameActivity"
+    android:orientation="vertical"
+    >
 
     <com.google.android.material.appbar.MaterialToolbar
         android:layout_width="match_parent"
@@ -14,34 +16,87 @@
 
     </com.google.android.material.appbar.MaterialToolbar>
 
-    <Button
-        android:id="@+id/europaButton"
-        android:onClick="startEuropaGame"
+    <LinearLayout
+        android:id="@+id/europaLinear"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="@string/gameEuropa"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        style="@style/Widget.MaterialComponents.Button"/>
-    <Button
-        android:id="@+id/asiaButton"
-        android:onClick="startAsiaGame"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="@string/gameAsia"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_below="@id/europaButton"
-        style="@style/Widget.MaterialComponents.Button"/>
-    <Button
-        android:id="@+id/oceaniaButton"
-        android:onClick="startOceaniaGame"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="@string/gameOceania"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_below="@id/asiaButton"
-        style="@style/Widget.MaterialComponents.Button"/>
+        android:layout_weight="1"
+        >
+        <Button
+            android:id="@+id/europaButton"
+            android:onClick="startEuropaGame"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/gameEuropa"
+            style="@style/Widget.MaterialComponents.Button"/>
 
-</RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/asiaLinear"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/asiaButton"
+            android:onClick="startAsiaGame"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/gameAsia"
+            style="@style/Widget.MaterialComponents.Button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/oceaniaLinear"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/oceaniaButton"
+            android:onClick="startOceaniaGame"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/gameOceania"
+            style="@style/Widget.MaterialComponents.Button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/africaLinear"
+        android:layout_weight="1"
+        android:layout_below="@+id/asiaLinear">
+        <Button
+            android:id="@+id/africaButton"
+            android:onClick="startOceaniaGame"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/gameAfrica"
+            style="@style/Widget.MaterialComponents.Button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/americaLinear"
+        android:layout_weight="1"
+        android:layout_below="@+id/asiaLinear">
+        <Button
+            android:id="@+id/americaButton"
+            android:onClick="startOceaniaGame"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/gameAmerica"
+            style="@style/Widget.MaterialComponents.Button"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

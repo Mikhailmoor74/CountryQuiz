@@ -9,4 +9,7 @@
     <string name="gameEuropa">Европа</string>
     <string name="gameAsia">Азия</string>
     <string name="gameOceania">Океания</string>
+    <string name="gameAfrica">Африка</string>
+    <string name="gameAmerica">Северная и Южная Америка</string>
+
 </resources>
