@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Country Quiz</string>
+    // Меню главного ээкрана
+    <string name="StartGame">Начать игру</string>
+    <string name="ProgressGame">Прогресс</string>
+
+    // Меню выбора региона
+
+    <string name="gameEuropa">Европа</string>
+    <string name="gameAsia">Азия</string>
+    <string name="gameOceania">Океания</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <Button
+        android:id="@+id/europaButton"
+        android:onClick="startEuropaGame"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/gameEuropa"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        style="@style/Widget.MaterialComponents.Button"/>
+    <Button
+        android:id="@+id/asiaButton"
+        android:onClick="startAsiaGame"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/gameAsia"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/europaButton"
+        style="@style/Widget.MaterialComponents.Button"/>
+    <Button
+        android:id="@+id/oceaniaButton"
+        android:onClick="startOceaniaGame"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/gameOceania"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/asiaButton"
+        style="@style/Widget.MaterialComponents.Button"/>
+
+</RelativeLayout>
