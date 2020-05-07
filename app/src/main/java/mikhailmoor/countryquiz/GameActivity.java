@@ -60,6 +60,16 @@ public class GameActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void startAfricaGame(View view) {
+        Intent intent = new Intent(this, OceaniaGame.class);  // Не забыть добавить класс для интента
+        startActivity(intent);
+    }
+
+    public void startAmericaGame(View view) {
+        Intent intent = new Intent(this, OceaniaGame.class); // Не забыть добавить класс для интента
+        startActivity(intent);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -74,5 +84,7 @@ public class GameActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 
 }
