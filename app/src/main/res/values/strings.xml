@@ -12,4 +12,28 @@
     <string name="gameAfrica">Африка</string>
     <string name="gameAmerica">Северная и Южная Америка</string>
 
+
+    //
+    <string-array name="questions">
+        <item>Столица Германии?</item>
+        <item>Столица России?</item>
+        <item>Столица Дании?</item>
+        <item>Столица Польши?</item>
+    </string-array>
+
+    <string-array name="answers">
+        <item>Берлин</item>
+        <item>Москва</item>
+        <item>Копенгаген</item>
+        <item>Варшава</item>
+        <item>Чикаго</item>
+        <item>Бостон</item>
+        <item>Нью-йорк</item>
+        <item>Челябинск</item>
+        <item>Саратов</item>
+        <item>Парма</item>
+    </string-array>
+
+
+
 </resources>

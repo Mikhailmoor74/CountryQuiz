@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import com.google.android.material.appbar.MaterialToolbar;
@@ -28,20 +30,25 @@ public class GameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
+        Window w = getWindow();
+        w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         europaButton = findViewById(R.id.europaButton);
         asiaButton = findViewById(R.id.asiaButton);
         oceaniaButton = findViewById(R.id.oceaniaButton);
         africaButton = findViewById(R.id.africaButton);
         americaButton = findViewById(R.id.americaButton);
 
-        toolbar = findViewById(R.id.toolbar);
+
+
+        /*toolbar = findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_home_white_24dp);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_home_white_24dp);*/
     }
 
 
